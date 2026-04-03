@@ -1,0 +1,218 @@
+/* =========================================
+   GLOBAL SECTION CONSISTENCY
+========================================= */
+
+.section-divider {
+    margin: 40px auto;
+}
+
+.sup-core,
+.dark-support,
+.sup-cta {
+    padding: 100px 20px;
+}
+
+/* =========================================
+   HERO (MATCH SYSTEM)
+========================================= */
+
+.sup-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 120px 20px 80px;
+
+    background: linear-gradient(90deg, #000000, #3f3f3f);
+}
+
+.sup-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: auto;
+    margin-top: -50px;
+    margin-bottom: -20px;
+}
+
+.sup-hero h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: white;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.sup-subtitle {
+    font-size: 18px;
+    color: #6faeff;
+    margin-bottom: 20px;
+}
+
+.sup-description {
+    font-size: 16px;
+    color: rgba(255,255,255,0.85);
+}
+
+/* =========================================
+   CORE SECTION
+========================================= */
+
+.sup-core {
+    background: #f9fbff;
+}
+
+.sup-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.sup-text h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.sup-text p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.7;
+}
+
+.sup-number {
+    font-size: 20px;
+    font-weight: 700;
+    color: #3489db;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.sup-image img {
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    transition: 0.4s;
+}
+
+.sup-image:hover img {
+    transform: translateY(-6px) scale(1.02);
+}
+
+/* =========================================
+   FLOW (GRID UPGRADE)
+========================================= */
+
+.dark-support {
+    background: linear-gradient(135deg, #000, #050505);
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.sup-flow-container {
+    max-width: 1100px;
+    margin: 50px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.sup-step {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    border-radius: 14px;
+
+    text-align: left;
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.sup-step:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow:
+        0 20px 40px rgba(0,0,0,0.5),
+        0 0 20px rgba(52,137,219,0.3);
+}
+
+.sup-step p {
+    color: rgba(255,255,255,0.75);
+}
+
+.sup-step .sup-number {
+    color: #3489db;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* =========================================
+   CTA
+========================================= */
+
+.sup-cta {
+    text-align: center;
+    background: linear-gradient(135deg, #000, #6c5ce7);
+}
+
+.sup-cta-container {
+    max-width: 700px;
+    margin: auto;
+}
+
+.sup-cta h2 {
+    font-size: 42px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.sup-cta p {
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 30px;
+}
+
+.sup-btn {
+    padding: 14px 30px;
+    border-radius: 5px;
+    border: 2px solid white;
+    color: white;
+    transition: 0.3s;
+}
+
+.sup-btn:hover {
+    background: #3489db;
+    border-color: #3489db;
+    transform: translateY(-3px);
+    color: white;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1024px) {
+    .sup-flow-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .sup-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .sup-hero h1 {
+        font-size: 32px;
+    }
+
+    .sup-cta h2 {
+        font-size: 28px;
+    }
+
+}

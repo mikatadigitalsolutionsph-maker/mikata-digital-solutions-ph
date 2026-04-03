@@ -1,0 +1,513 @@
+/* =========================
+   HERO
+========================= */
+
+.fullproject-hero {
+    padding: 140px 20px;
+    text-align: center;
+    background: radial-gradient(circle at top, #1a1a1a, #000000 70%);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.fullproject-hero::before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(124,58,237,0.25), transparent 70%);
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: blur(80px);
+}
+
+.fullproject-hero .hero-content {
+    max-width: 850px;
+    margin: auto;
+    margin-top: -50px;
+    margin-bottom: -20px;
+}
+
+.fullproject-hero h1 {
+    font-size: 64px;
+    margin-bottom: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.fullproject-hero p {
+    color: rgba(255,255,255,0.7);
+    font-size: 15px;
+}
+
+.fullproject-hero span {
+    background: linear-gradient(90deg, #4f9cff, #a855f7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* HERO BADGES */
+
+.hero-badges {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.hero-badges span {
+    padding: 10px 18px;
+    border-radius: 999px;
+
+    background: rgba(255,255,255,0.05) !important;
+    border: 1px solid rgba(255,255,255,0.12);
+    -webkit-text-fill-color: #ffffff !important;
+    font-size: 13px;
+
+    backdrop-filter: blur(10px);
+
+    color: #ffffff !important;
+
+    transition: all 0.3s ease;
+}
+
+.hero-badges span:hover {
+    background: rgba(124,58,237,0.2);
+    border-color: rgba(124,58,237,0.4);
+}
+
+/* =========================
+   SECTION
+========================= */
+
+.fullproject-section {
+    padding: 120px 20px;
+    background: linear-gradient(180deg, #f8fafc, #eef2ff);
+}
+
+.fullproject-container {
+    max-width: 920px;
+    margin: auto;
+    margin-top: -60px;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.fullproject-form {
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(18px);
+
+    padding: 50px;
+    border-radius: 20px;
+
+    border: 1px solid rgba(255,255,255,0.4);
+
+    box-shadow: 
+        0 40px 80px rgba(0,0,0,0.12),
+        inset 0 1px 0 rgba(255,255,255,0.4);
+
+    transition: all 0.4s ease;
+}
+
+.fullproject-form:hover {
+    transform: translateY(-4px);
+}
+
+/* TEXT */
+
+.fullproject-form h2 {
+    font-size: 40px;
+    margin-bottom: 8px;
+    color: #7c3aed;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: #6b7280;
+    margin-bottom: 30px;
+}
+
+/* INPUTS */
+
+.fullproject-form input,
+.fullproject-form textarea,
+.fullproject-form select {
+    width: 95%;
+    padding: 15px;
+
+    border-radius: 10px;
+
+    border: 1px solid #e5e7eb;
+    background: #f9fafb;
+
+    margin-bottom: 15px;
+
+    transition: all 0.25s ease;
+}
+
+.fullproject-form input:hover,
+.fullproject-form textarea:hover,
+.fullproject-form select:hover {
+    border-color: #d1d5db;
+}
+
+.fullproject-form input:focus,
+.fullproject-form textarea:focus,
+.fullproject-form select:focus {
+    outline: none;
+
+    border-color: #7c3aed;
+    background: #ffffff;
+
+    box-shadow: 0 0 0 4px rgba(124,58,237,0.15);
+}
+
+/* SELECT FULL WIDTH */
+
+.budget,
+.weeks,
+.meeting {
+    width: 99% !important;
+}
+
+/* ROW */
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.form-row > * {
+    flex: 1;
+}
+
+/* =========================
+   PROJECT TILES
+========================= */
+
+.project-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.project-tile {
+    padding: 28px;
+    border-radius: 16px;
+
+    background: linear-gradient(135deg, #ffffff, #f9fafb);
+
+    border: 1px solid #e5e7eb;
+
+    cursor: pointer;
+
+    transition: all 0.35s ease;
+
+    box-shadow: 
+        0 15px 35px rgba(0,0,0,0.08);
+}
+
+.project-tile:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 
+        0 30px 60px rgba(0,0,0,0.15);
+}
+
+.project-tile input {
+    display: none;
+}
+
+.project-tile:has(input:checked) {
+    border-color: #7c3aed;
+    background: linear-gradient(135deg, #f5f3ff, #ede9fe);
+
+    box-shadow: 
+        0 25px 70px rgba(124,58,237,0.35);
+}
+
+/* TILE CONTENT */
+
+.tile-content h5 {
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.tile-content ul {
+    list-style: none;
+    padding: 0;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #374151;
+}
+
+.tile-content li {
+    margin-bottom: 6px;
+}
+
+/* =========================
+   AGREEMENT
+========================= */
+
+.agreement-box {
+    margin-top: 25px;
+    padding: 25px;
+
+    border-radius: 14px;
+
+    background: linear-gradient(135deg, #f5f3ff, #ede9fe);
+
+    box-shadow: 
+        0 20px 40px rgba(124,58,237,0.2);
+
+    line-height: 1.7;
+}
+
+.agreement-box ul {
+    max-height: 220px;
+    overflow-y: auto;
+    padding-left: 15px;
+}
+
+.agreement-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 18px;
+
+    font-size: 14px;
+    color: #374151;
+}
+
+.agreement-check input {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+#submitFull {
+    width: 100%;
+    padding: 16px;
+
+    border-radius: 12px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    background: linear-gradient(135deg, #7c3aed, #9333ea);
+    color: white;
+
+    border: none;
+    margin-top: 45px;
+
+    transition: all 0.35s ease;
+}
+
+#submitFull:hover {
+    transform: translateY(-3px) scale(1.01);
+    box-shadow: 
+        0 20px 40px rgba(124,58,237,0.45);
+}
+
+#submitFull:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+    opacity: 0.6;
+}
+
+.highlight-box {
+    margin-top: 20px;
+    padding: 18px;
+
+    background: linear-gradient(135deg, #ecfdf5, #d1fae5);
+    border-left: 4px solid #22c55e;
+
+    border-radius: 5px;
+    box-shadow: 0 8px 20px rgba(34,197,94,0.15);
+}
+
+/* =========================
+   STEP
+========================= */
+
+.step { display: none; }
+.step.active { display: block; }
+
+.step h4 {
+    color: #7c3aed;
+    font-size: 18px;
+}
+
+.step-indicator {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.step-indicator span {
+    opacity: 0.3;
+}
+
+.step-indicator span.active {
+    color: #7c3aed;
+    font-weight: 600;
+    opacity: 1;
+}
+
+/* BUTTONS */
+
+.step-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.next-btn,
+.back-btn {
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.next-btn {
+    background: linear-gradient(135deg, #7c3aed, #9333ea);
+    color: white;
+}
+
+.next-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(124,58,237,0.4);
+}
+
+.back-btn {
+    background: #e5e7eb;
+}
+
+.back-btn:hover {
+    background: #d1d5db;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .fullproject-hero h1 {
+        font-size: 38px;
+    }
+
+    .project-options {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .fullproject-form {
+        padding: 25px 18px;
+    }
+
+    .fullproject-form input,
+    .fullproject-form textarea,
+    .fullproject-form select {
+        width: 90%;
+    }
+}
+
+/* =========================
+   MOBILE FIX - PROJECT FORM
+========================= */
+
+@media (max-width: 768px) {
+
+    /* FORM CONTAINER */
+    .fullproject-form {
+        padding: 22px 14px !important;
+        border-radius: 12px;
+    }
+
+    /* INPUT FULL WIDTH */
+    .fullproject-form input,
+    .fullproject-form textarea,
+    .fullproject-form select {
+        width: 90% !important;
+        font-size: 14px;
+    }
+
+    /* STEP INDICATOR */
+    .step-indicator {
+        font-size: 11px;
+        gap: 5px;
+        text-align: center;
+    }
+
+    /* PROJECT TILES */
+    .project-options {
+        grid-template-columns: 1fr !important;
+        gap: 15px;
+    }
+
+    /* AGREEMENT BOX */
+    .agreement-box {
+        padding: 18px 14px !important;
+        border-radius: 10px;
+    }
+
+    /* AGREEMENT TEXT FIX */
+    .agreement-box ul {
+        max-height: 180px;
+        overflow-y: auto;
+        padding-left: 18px;
+
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .agreement-box li {
+        margin-bottom: 10px;
+    }
+
+    /* FIX TEXT WRAPPING */
+    .agreement-box {
+        text-align: left;
+    }
+
+    /* CHECKBOX ALIGNMENT */
+    .agreement-check {
+        align-items: flex-start !important;
+        gap: 8px;
+    }
+
+    .agreement-check input {
+        margin-top: 4px;
+    }
+
+    /* BUTTON FULL WIDTH */
+    #submitFull {
+        width: 100%;
+        font-size: 14px;
+        padding: 14px;
+    }
+}

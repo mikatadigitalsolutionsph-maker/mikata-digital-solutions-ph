@@ -1,0 +1,225 @@
+/* =========================================
+   GLOBAL SECTION CONSISTENCY
+========================================= */
+
+.section-divider {
+    margin: 40px auto;
+}
+
+.ba-process,
+.dark-analysis,
+.ba-cta {
+    padding: 100px 20px;
+}
+
+/* =========================================
+   HERO (MATCH SYSTEM)
+========================================= */
+
+.ba-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 120px 20px 80px;
+
+    background: linear-gradient(90deg, #000000, #3f3f3f);
+}
+
+.ba-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: auto;
+    margin-top: -50px;
+    margin-bottom: -20px;
+}
+
+.ba-hero h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: white;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.ba-subtitle {
+    font-size: 18px;
+    color: #6faeff;
+    margin-bottom: 20px;
+}
+
+.ba-description {
+    font-size: 16px;
+    color: rgba(255,255,255,0.85);
+}
+
+/* =========================================
+   PROCESS SECTION
+========================================= */
+
+.ba-process {
+    background: #f9fbff;
+}
+
+.ba-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* TEXT */
+.ba-text h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.ba-text p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* NUMBER */
+.ba-process-number {
+    font-size: 20px;
+    font-weight: 700;
+    color: #3489db;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+/* IMAGE */
+.ba-image img {
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    transition: 0.4s;
+}
+
+.ba-image:hover img {
+    transform: translateY(-6px) scale(1.02);
+}
+
+/* =========================================
+   FLOW (UPGRADED GRID)
+========================================= */
+
+.dark-analysis {
+    background: linear-gradient(135deg, #000, #050505);
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.ba-flow-container {
+    max-width: 1100px;
+    margin: 50px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+/* CARD */
+.ba-step {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    border-radius: 14px;
+
+    text-align: left;
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* HOVER */
+.ba-step:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow:
+        0 20px 40px rgba(0,0,0,0.5),
+        0 0 20px rgba(52,137,219,0.3);
+}
+
+/* TEXT */
+.ba-step p {
+    color: rgba(255,255,255,0.75);
+}
+
+/* NUMBER */
+.ba-number {
+    color: #3489db;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* =========================================
+   CTA
+========================================= */
+
+.ba-cta {
+    text-align: center;
+    background: linear-gradient(135deg, #000, #6c5ce7);
+}
+
+.ba-cta-container {
+    max-width: 700px;
+    margin: auto;
+}
+
+.ba-cta h2 {
+    font-size: 42px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.ba-cta p {
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 30px;
+}
+
+.ba-btn {
+    padding: 14px 30px;
+    border-radius: 5px;
+    border: 2px solid white;
+    color: white;
+    transition: 0.3s;
+}
+
+.ba-btn:hover {
+    background: #3489db;
+    border-color: #3489db;
+    transform: translateY(-3px);
+    color: white;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1024px) {
+    .ba-flow-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .ba-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .ba-hero h1 {
+        font-size: 32px;
+    }
+
+    .ba-cta h2 {
+        font-size: 28px;
+    }
+
+}

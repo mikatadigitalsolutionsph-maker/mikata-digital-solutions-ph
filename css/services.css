@@ -1,0 +1,343 @@
+/* =========================================
+   GLOBAL SECTION CONSISTENCY
+========================================= */
+
+.section-divider {
+    margin: 40px auto;
+}
+
+.service-split,
+.service-split-2,
+.service-split-3,
+.process-modern,
+.cta-final {
+    padding: 100px 20px;
+}
+
+/* =========================================
+   HERO (UPGRADED TO MATCH HOMEPAGE)
+========================================= */
+
+.services-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 120px 20px 80px;
+
+    background: linear-gradient(90deg, #000000, #3f3f3f);
+}
+
+/* PARTICLES LAYER */
+.hero-particles {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+/* CONTENT */
+.services-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: auto;
+    margin-top: -50px;
+    margin-bottom: -20px;
+}
+
+/* TITLE */
+.services-hero h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: white;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+/* SUBTITLE */
+.services-subtitle {
+    font-size: 18px;
+    color: #6faeff;
+    margin-bottom: 20px;
+}
+
+/* DESCRIPTION */
+.services-description {
+    font-size: 16px;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 15px;
+}
+
+/* =========================================
+   HERO BUTTON (FIXED + PREMIUM)
+========================================= */
+
+.services-buttons {
+    margin-top: 30px;
+}
+
+/* PRIMARY BUTTON */
+.services-buttons .btn-primary {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 5px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    background: linear-gradient(135deg, #3489db, #6c5ce7);
+    color: white;
+
+    text-decoration: none;
+    border: none;
+
+    transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.services-buttons .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(52,137,219,0.4);
+}
+
+/* =========================================
+   SERVICE SPLIT (CLEANED)
+========================================= */
+
+.service-container,
+.service2-container,
+.service3-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* TEXT */
+.service-text h2,
+.service2-text h2,
+.service3-text h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.service2-text h2 {
+    color: white;
+}
+
+.service-text p,
+.service2-text p,
+.service3-text p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* DARK TEXT FIX */
+.service2-text p {
+    color: rgba(255,255,255,0.75);
+}
+
+/* LABELS */
+.service-label,
+.service2-label,
+.service3-label {
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #3489db;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+/* IMAGES */
+.service-image img,
+.service2-image img,
+.service3-image img {
+    width: 100%;
+    border-radius: 14px;
+    display: block;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    transition: 0.4s;
+}
+
+.service-image:hover img,
+.service2-image:hover img,
+.service3-image:hover img {
+    transform: translateY(-6px) scale(1.02);
+}
+
+/* =========================================
+   BACKGROUNDS
+========================================= */
+
+.service-split {
+    background: #f9fbff;
+}
+
+.service-split-2 {
+    background: linear-gradient(135deg, #000, #0a0a0a);
+}
+
+.service-split-3 {
+    background: #f4f7fc;
+    position: relative;
+}
+
+.service-split-3::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 30% 40%, rgba(52,137,219,0.08), transparent 50%);
+}
+
+/* =========================================
+   PROCESS (MATCH HOMEPAGE STYLE)
+========================================= */
+
+.process-modern {
+    text-align: center;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 50px auto 0;
+}
+
+/* =========================================
+   PROCESS CARD HOVER (PUFF EFFECT)
+========================================= */
+
+.process-card {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    border-radius: 14px;
+    text-align: left;
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* 🔥 HOVER EFFECT */
+.process-card:hover {
+    transform: translateY(-10px) scale(1.03); /* puff-up */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+
+    border-color: rgba(52,137,219,0.5);
+    box-shadow:
+    0 20px 40px rgba(0,0,0,0.4),
+    0 0 20px rgba(52,137,219,0.2);
+}
+
+.process-card:hover h3 {
+    color: #6faeff;
+}
+
+.process-number {
+    font-weight: bold;
+    color: #3489db;
+    margin-bottom: 10px;
+}
+
+.process-card h3 {
+    margin-bottom: 10px;
+}
+
+.process-card p {
+    font-size: 15px;
+    color: #555;
+}
+
+/* DARK PROCESS */
+.dark-process {
+    background: linear-gradient(135deg, #000, #050505);
+    color: white;
+}
+
+.dark-process .process-card {
+    background: rgba(255,255,255,0.05);
+    color: white;
+    backdrop-filter: blur(10px);
+}
+
+.dark-process .process-card p {
+    color: rgba(255,255,255,0.75);
+}
+
+/* =========================================
+   CTA (UPGRADED)
+========================================= */
+
+.cta-final {
+    text-align: center;
+    background: linear-gradient(135deg, #000, #6c5ce7);
+    position: relative;
+}
+
+.cta-final-container {
+    max-width: 700px;
+    margin: auto;
+}
+
+.cta-final h2 {
+    font-size: 42px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.cta-final p {
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    padding: 14px 30px;
+    border-radius: 5px;
+    border: 2px solid white;
+    color: white;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: #3489db;
+    border-color: #3489db;
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1024px) {
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .service-container,
+    .service2-container,
+    .service3-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .services-hero h1 {
+        font-size: 32px;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-final h2 {
+        font-size: 28px;
+    }
+
+}

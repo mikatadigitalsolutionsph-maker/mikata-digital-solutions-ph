@@ -1,0 +1,319 @@
+/* =========================
+   CONTACT HERO (UNCHANGED)
+========================= */
+
+.contact-hero {
+    padding: 120px 20px;
+    text-align: center;
+    background: linear-gradient(90deg, #000000, #3f3f3f);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-hero-content {
+    max-width: 900px;
+    margin: auto;
+    margin-top: -50px;
+    margin-bottom: -20px;
+}
+
+.contact-hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.contact-section h2 {
+    color: white;
+    font-size: 40px !important;
+}
+
+.contact-hero p {
+    font-size: 16px;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.7;
+}
+
+/* HERO ANIMATION */
+
+.hero-animate {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease;
+}
+
+.hero-animate.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =========================
+   HERO BUTTONS
+========================= */
+
+.section-btn.inquire {
+    background: linear-gradient(90deg, #a4d3ff, #6c63ff);
+    border-radius: 5px;
+    color: white;
+}
+
+.section-btn.inquire:hover {
+    transform: translateY(-2px);
+    color: white;
+    background: linear-gradient(90deg, #a4d3ff, #6c63ff);
+    box-shadow: 0 10px 25px #6c63ff;
+}
+
+.section-btn.consult {
+    background: linear-gradient(90deg, #a4d3ff, #6c63ff);
+    border-radius: 5px;
+    color: white;
+}
+
+.section-btn.consult:hover {
+    transform: translateY(-2px);
+    color: white;
+    background: linear-gradient(90deg, #a4d3ff, #6c63ff);
+    box-shadow: 0 10px 25px #6c63ff;
+}
+
+.section-btn.free {
+    background: linear-gradient(90deg, #a4d3ff, #6c63ff);
+    border-radius: 5px;
+    color: white;
+}
+
+.section-btn.free:hover {
+    transform: translateY(-2px);
+    color: white;
+    background: linear-gradient(90deg, #a4d3ff, #6c63ff);
+    box-shadow: 0 10px 25px #6c63ff;
+}
+
+.section-btn.project {
+    background: linear-gradient(90deg, #a4d3ff, #3429ff);
+    border-radius: 5px;
+    color: white;
+}
+
+.section-btn.project:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px #6c63ff;
+}
+
+/* =========================
+   CONTACT SECTIONS
+========================= */
+
+.contact-section {
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(90deg, #ffffff, #8a8a8a);
+}
+
+.contact-section.alt {
+    background: linear-gradient(90deg, #000000, #3f3f3f);
+}
+
+.section-content-inquire {
+    max-width: 800px;
+    margin: auto;
+    margin-top: -50px;
+    margin-bottom: -20px;
+}
+
+.section-content-consult {
+    max-width: 800px;
+    margin: auto;
+    margin-top: -50px;
+    margin-bottom: -20px;
+}
+
+.section-content-free {
+    max-width: 800px;
+    margin: auto;
+    margin-top: -50px;
+    margin-bottom: -20px;
+}
+
+.section-content-project {
+    max-width: 800px;
+    margin: auto;
+    margin-top: -50px;
+    margin-bottom: -20px;
+}
+
+.section-content-inquire h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.section-content-inquire p {
+    color: black;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.section-content-inquire ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+    color: black;
+    line-height: 1.8;
+}
+
+.section-content-consult h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.section-content-consult p {
+    color: #d1d5db;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.section-content-consult ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+    color: #cbd5e1;
+    line-height: 1.8;
+}
+
+.section-content-free h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.section-content-free p {
+    color: black;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.section-content-free ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+    color: black;
+    line-height: 1.8;
+}
+
+.section-content-project h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.section-content-project p {
+    color: white;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.section-content-project ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+    color: white;
+    line-height: 1.8;
+}
+
+/* SECTION BUTTONS */
+
+.section-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg, #3489db, #6c63ff);
+    transition: 0.3s;
+}
+
+.section-btn.primary {
+    background: linear-gradient(90deg, #3489db, #6c63ff);
+}
+
+.section-btn.outline {
+    background: transparent;
+    border: 1px solid #3489db;
+}
+
+.section-btn.accent {
+    background: linear-gradient(90deg, #22c55e, #10b981);
+}
+
+.section-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* NOTES */
+
+.note-free {
+    font-size: 14px;
+    color: #2b00ff !important;
+    margin-bottom: 15px;
+}
+
+.note-project {
+    font-size: 14px;
+    color: #bfb2ff !important;
+    margin-bottom: 15px;
+}
+
+.highlights {
+    background: linear-gradient(90deg, #3489db, #6c5ce7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* =========================
+   PARTICLE COLOR OVERRIDES
+========================= */
+
+.particles-blue .hero-particles span {
+    background: radial-gradient(circle, #a6d4ff 100%, #fff 70%, transparent) !important;
+}
+
+.particles-purple .hero-particles span {
+    background: radial-gradient(circle, #8b5cf6 100%, #fff 70%, transparent) !important;
+}
+
+.particles-yellow .hero-particles span {
+    background: radial-gradient(circle, #facc15 100%, #fff 70%, transparent) !important;
+}
+
+.particles-green .hero-particles span {
+    background: radial-gradient(circle, #22c55e 100%, #fff 70%, transparent) !important;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .contact-hero h1 {
+        font-size: 30px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero-btn {
+        width: 100%;
+        max-width: 250px;
+    }
+
+}
