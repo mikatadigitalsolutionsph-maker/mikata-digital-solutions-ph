@@ -306,7 +306,11 @@
 .cta-btn:hover {
     background: #3489db;
     border-color: #3489db;
+    color: #000;
+
     transform: translateY(-3px);
+
+    box-shadow: 0 10px 25px rgba(52,137,219,0.4);
 }
 
 /* =========================================
